@@ -1,0 +1,246 @@
+[debug] [2021-11-22T13:40:50.440Z] ----------------------------------------------------------------------
+[debug] [2021-11-22T13:40:50.444Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jvmax\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-22T13:40:50.445Z] CLI Version:   9.23.0
+[debug] [2021-11-22T13:40:50.445Z] Platform:      win32
+[debug] [2021-11-22T13:40:50.445Z] Node Version:  v14.18.0
+[debug] [2021-11-22T13:40:50.446Z] Time:          Mon Nov 22 2021 10:40:50 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-11-22T13:40:50.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-22T13:40:50.459Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-22T13:40:50.459Z] > authorizing via signed-in user (jvmax98@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\jvmax\agna-store
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-11-22T13:40:55.950Z] > refreshing access token with scopes: []
+[debug] [2021-11-22T13:40:55.951Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-22T13:40:56.185Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 22 Nov 2021 13:40:57 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:40:56.199Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-11-22T13:40:56.836Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-11-22T13:40:56.836Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project agnastore210421 (AgnaStore) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-11-22T13:40:59.200Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-22T13:40:59.200Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-22T13:40:59.458Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 22 Nov 2021 13:41:01 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:40:59.472Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/agnastore210421/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-11-22T13:41:00.484Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-11-22T13:41:00.486Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/agnastore210421/locations/-/instances/agnastore210421-default-rtdb  
+ 
+[debug] [2021-11-22T13:41:01.464Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-11-22T13:41:06.347Z] >>> HTTP REQUEST GET https://agnastore210421-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-11-22T13:41:06.874Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Mon, 22 Nov 2021 13:41:08 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for agnastore210421-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-11-22T13:41:06.880Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/agnastore210421/services/firestore.googleapis.com  
+ 
+[debug] [2021-11-22T13:41:07.972Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:41:07.973Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/agnastore210421  
+ 
+[debug] [2021-11-22T13:41:08.549Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:41:08.549Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-11-22T13:41:08.550Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-22T13:41:08.550Z] > authorizing via signed-in user (jvmax98@gmail.com)
+[debug] [2021-11-22T13:41:08.550Z] [iam] checking project agnastore210421 for permissions ["firebase.projects.get"]
+[debug] [2021-11-22T13:41:08.551Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/agnastore210421:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-11-22T13:41:09.470Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=717","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-11-22T13:41:13.237Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/agnastore210421/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-11-22T13:41:14.166Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:41:14.167Z] Found ruleset: projects/agnastore210421/rulesets/4db26188-b21f-41a6-8c83-356be4f0b115
+[debug] [2021-11-22T13:41:14.167Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/agnastore210421/rulesets/4db26188-b21f-41a6-8c83-356be4f0b115  
+ 
+[debug] [2021-11-22T13:41:15.000Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-11-22T13:41:17.754Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/agnastore210421/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-11-22T13:41:17.755Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/agnastore210421/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-11-22T13:41:18.076Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:41:18.213Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-11-22T13:41:18.220Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-22T13:41:18.220Z] > authorizing via signed-in user (jvmax98@gmail.com)
+[debug] [2021-11-22T13:41:18.220Z] [iam] checking project agnastore210421 for permissions ["firebase.projects.get"]
+[debug] [2021-11-22T13:41:18.221Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/agnastore210421:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-11-22T13:41:19.070Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=733","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:41:19.071Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/agnastore210421/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-11-22T13:41:19.072Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/agnastore210421/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-11-22T13:41:20.125Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:41:20.788Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:41:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-11-22T13:42:15.390Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-11-22T13:42:15.544Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-11-22T13:42:15.545Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.5.0","browserURL":"https://www.gstatic.com/firebasejs/9.5.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.5.0/firebase.tgz"},"live":{"version":"9.5","browserURL":"https://www.gstatic.com/firebasejs/live/9.5/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.5/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.5.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.5.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.5.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.5.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.5.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.5.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.5.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.5.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.5.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\jvmax\agna-store 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=318029492&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-11-22T13:42:25.250Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"eb734fd4cc7677b7d4fb","redirect_uri":"http://localhost:9005","state":"318029492"}
+[debug] [2021-11-22T13:42:25.841Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 22 Nov 2021 13:42:27 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"0eaa956c04add4d99a3c1e92de94739e\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"C9AA:3525:3311:9E49E:619B9E42"}
+[debug] [2021-11-22T13:42:25.845Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-11-22T13:42:26.154Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-11-22T13:42:26.154Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"joaovmvmendes","id":67447385,"node_id":"MDQ6VXNlcjY3NDQ3Mzg1","avatar_url":"https://avatars.githubusercontent.com/u/67447385?v=4","gravatar_id":"","url":"https://api.github.com/users/joaovmvmendes","html_url":"https://github.com/joaovmvmendes","followers_url":"https://api.github.com/users/joaovmvmendes/followers","following_url":"https://api.github.com/users/joaovmvmendes/following{/other_user}","gists_url":"https://api.github.com/users/joaovmvmendes/gists{/gist_id}","starred_url":"https://api.github.com/users/joaovmvmendes/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/joaovmvmendes/subscriptions","organizations_url":"https://api.github.com/users/joaovmvmendes/orgs","repos_url":"https://api.github.com/users/joaovmvmendes/repos","events_url":"https://api.github.com/users/joaovmvmendes/events{/privacy}","received_events_url":"https://api.github.com/users/joaovmvmendes/received_events","type":"User","site_admin":false,"name":"João Vítor Martins Villela Mendes","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2020-06-26T01:19:01Z","updated_at":"2021-11-17T00:33:58Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":736,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as joaovmvmendes 
+[info] 
+[debug] [2021-11-22T13:42:35.009Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:35.235Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:35.236Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:38.077Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:38.322Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:38.322Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:39.019Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:39.222Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:39.246Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:39.246Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:39.441Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:39.480Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:39.481Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:39.629Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:39.676Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:39.676Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:39.828Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:39.862Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:39.862Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:40.028Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:42:40.051Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:40.051Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:42:40.307Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-22T13:42:40.308Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-22T13:43:22.234Z] >>> [apiv2][query] GET https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/public-key type=owner
+[debug] [2021-11-22T13:43:22.553Z] <<< [apiv2][status] GET https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/public-key 200
+[debug] [2021-11-22T13:43:22.553Z] <<< [apiv2][body] GET https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/public-key {"key_id":"568250167242549743","key":"pDyUkl3jxwdEjobpfWjykdCadAnUz2jfvQV4BfcTRjo="}
+[debug] [2021-11-22T13:43:22.556Z] >>> [apiv2][query] GET https://api.github.com/repos/joaovmvmendes/agna-store [none]
+[debug] [2021-11-22T13:43:22.827Z] <<< [apiv2][status] GET https://api.github.com/repos/joaovmvmendes/agna-store 200
+[debug] [2021-11-22T13:43:22.827Z] <<< [apiv2][body] GET https://api.github.com/repos/joaovmvmendes/agna-store {"id":430701100,"node_id":"R_kgDOGav6LA","name":"agna-store","full_name":"joaovmvmendes/agna-store","private":true,"owner":{"login":"joaovmvmendes","id":67447385,"node_id":"MDQ6VXNlcjY3NDQ3Mzg1","avatar_url":"https://avatars.githubusercontent.com/u/67447385?v=4","gravatar_id":"","url":"https://api.github.com/users/joaovmvmendes","html_url":"https://github.com/joaovmvmendes","followers_url":"https://api.github.com/users/joaovmvmendes/followers","following_url":"https://api.github.com/users/joaovmvmendes/following{/other_user}","gists_url":"https://api.github.com/users/joaovmvmendes/gists{/gist_id}","starred_url":"https://api.github.com/users/joaovmvmendes/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/joaovmvmendes/subscriptions","organizations_url":"https://api.github.com/users/joaovmvmendes/orgs","repos_url":"https://api.github.com/users/joaovmvmendes/repos","events_url":"https://api.github.com/users/joaovmvmendes/events{/privacy}","received_events_url":"https://api.github.com/users/joaovmvmendes/received_events","type":"User","site_admin":false},"html_url":"https://github.com/joaovmvmendes/agna-store","description":null,"fork":false,"url":"https://api.github.com/repos/joaovmvmendes/agna-store","forks_url":"https://api.github.com/repos/joaovmvmendes/agna-store/forks","keys_url":"https://api.github.com/repos/joaovmvmendes/agna-store/keys{/key_id}","collaborators_url":"https://api.github.com/repos/joaovmvmendes/agna-store/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/joaovmvmendes/agna-store/teams","hooks_url":"https://api.github.com/repos/joaovmvmendes/agna-store/hooks","issue_events_url":"https://api.github.com/repos/joaovmvmendes/agna-store/issues/events{/number}","events_url":"https://api.github.com/repos/joaovmvmendes/agna-store/events","assignees_url":"https://api.github.com/repos/joaovmvmendes/agna-store/assignees{/user}","branches_url":"https://api.github.com/repos/joaovmvmendes/agna-store/branches{/branch}","tags_url":"https://api.github.com/repos/joaovmvmendes/agna-store/tags","blobs_url":"https://api.github.com/repos/joaovmvmendes/agna-store/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/joaovmvmendes/agna-store/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/joaovmvmendes/agna-store/git/refs{/sha}","trees_url":"https://api.github.com/repos/joaovmvmendes/agna-store/git/trees{/sha}","statuses_url":"https://api.github.com/repos/joaovmvmendes/agna-store/statuses/{sha}","languages_url":"https://api.github.com/repos/joaovmvmendes/agna-store/languages","stargazers_url":"https://api.github.com/repos/joaovmvmendes/agna-store/stargazers","contributors_url":"https://api.github.com/repos/joaovmvmendes/agna-store/contributors","subscribers_url":"https://api.github.com/repos/joaovmvmendes/agna-store/subscribers","subscription_url":"https://api.github.com/repos/joaovmvmendes/agna-store/subscription","commits_url":"https://api.github.com/repos/joaovmvmendes/agna-store/commits{/sha}","git_commits_url":"https://api.github.com/repos/joaovmvmendes/agna-store/git/commits{/sha}","comments_url":"https://api.github.com/repos/joaovmvmendes/agna-store/comments{/number}","issue_comment_url":"https://api.github.com/repos/joaovmvmendes/agna-store/issues/comments{/number}","contents_url":"https://api.github.com/repos/joaovmvmendes/agna-store/contents/{+path}","compare_url":"https://api.github.com/repos/joaovmvmendes/agna-store/compare/{base}...{head}","merges_url":"https://api.github.com/repos/joaovmvmendes/agna-store/merges","archive_url":"https://api.github.com/repos/joaovmvmendes/agna-store/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/joaovmvmendes/agna-store/downloads","issues_url":"https://api.github.com/repos/joaovmvmendes/agna-store/issues{/number}","pulls_url":"https://api.github.com/repos/joaovmvmendes/agna-store/pulls{/number}","milestones_url":"https://api.github.com/repos/joaovmvmendes/agna-store/milestones{/number}","notifications_url":"https://api.github.com/repos/joaovmvmendes/agna-store/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/joaovmvmendes/agna-store/labels{/name}","releases_url":"https://api.github.com/repos/joaovmvmendes/agna-store/releases{/id}","deployments_url":"https://api.github.com/repos/joaovmvmendes/agna-store/deployments","created_at":"2021-11-22T12:40:04Z","updated_at":"2021-11-22T13:25:00Z","pushed_at":"2021-11-22T13:24:58Z","git_url":"git://github.com/joaovmvmendes/agna-store.git","ssh_url":"git@github.com:joaovmvmendes/agna-store.git","clone_url":"https://github.com/joaovmvmendes/agna-store.git","svn_url":"https://github.com/joaovmvmendes/agna-store","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":"TypeScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"topics":[],"visibility":"private","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"AQCSUWKXL7XP7GFCVGBSNM3BTOP2Q","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-11-22T13:43:22.830Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/agnastore210421/serviceAccounts  
+ {"accountId":"github-action-430701100","serviceAccount":{"displayName":"GitHub Actions (joaovmvmendes/agna-store)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository joaovmvmendes/agna-store"}}
+[debug] [2021-11-22T13:43:24.213Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:43:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:43:24.214Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/agnastore210421/serviceAccounts/github-action-430701100@agnastore210421.iam.gserviceaccount.com  
+ 
+[debug] [2021-11-22T13:43:24.215Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/agnastore210421:getIamPolicy  
+ 
+[debug] [2021-11-22T13:43:24.611Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:43:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=280","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:43:25.068Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:43:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:43:25.069Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/agnastore210421:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwXRYMfWGmA=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-561292237193@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:agnastore210421@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-erny0@agnastore210421.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-561292237193@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-561292237193@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-erny0@agnastore210421.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:jvmax98@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-561292237193@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-430701100@agnastore210421.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-430701100@agnastore210421.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-430701100@agnastore210421.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-430701100@agnastore210421.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-11-22T13:43:26.449Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:43:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1260","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-22T13:43:26.450Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/agnastore210421/serviceAccounts/github-action-430701100@agnastore210421.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-11-22T13:43:27.498Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Nov 2021 13:43:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-430701100 with Firebase Hosting admin permissions. 
+[debug] [2021-11-22T13:43:27.576Z] >>> [apiv2][query] PUT https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/FIREBASE_SERVICE_ACCOUNT_AGNASTORE210421 [none]
+[debug] [2021-11-22T13:43:27.576Z] >>> [apiv2][body] PUT https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/FIREBASE_SERVICE_ACCOUNT_AGNASTORE210421 {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2021-11-22T13:43:27.953Z] <<< [apiv2][status] PUT https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/FIREBASE_SERVICE_ACCOUNT_AGNASTORE210421 201
+[debug] [2021-11-22T13:43:27.953Z] <<< [apiv2][body] PUT https://api.github.com/repos/joaovmvmendes/agna-store/actions/secrets/FIREBASE_SERVICE_ACCOUNT_AGNASTORE210421 {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_AGNASTORE210421. 
+[info] i  You can manage your secrets at https://github.com/joaovmvmendes/agna-store/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file C:\Users\jvmax\agna-store\.github/workflows/firebase-hosting-pull-request.yml 
+[info] 
+[info] +  Created workflow file C:\Users\jvmax\agna-store\.github/workflows/firebase-hosting-merge.yml 
+[info] 
+[info] i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] i  Action required: Push any new workflow file(s) to your repo 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.13.1.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.13.1.jar..."}}
+[debug] [2021-11-22T13:44:19.184Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.13.1.jar 
+[debug] [2021-11-22T13:44:19.484Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.13.1.jar 200
+[debug] [2021-11-22T13:44:19.484Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.13.1.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.7.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.7.2.jar..."}}
+[debug] [2021-11-22T13:44:28.644Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 
+[debug] [2021-11-22T13:44:28.931Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 200
+[debug] [2021-11-22T13:44:28.931Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [stream]
+[info] i  pubsub: downloading pubsub-emulator-0.1.0.zip... {"metadata":{"emulator":{"name":"pubsub"},"message":"downloading pubsub-emulator-0.1.0.zip..."}}
+[debug] [2021-11-22T13:44:32.978Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip 
+[debug] [2021-11-22T13:44:33.260Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip 200
+[debug] [2021-11-22T13:44:33.261Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip [stream]
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.0.1.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.0.1.jar..."}}
+[debug] [2021-11-22T13:44:39.108Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.0.1.jar 
+[debug] [2021-11-22T13:44:39.912Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.0.1.jar 200
+[debug] [2021-11-22T13:44:39.912Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.0.1.jar [stream]
+[info] i  ui: downloading ui-v1.6.4.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.6.4.zip..."}}
+[debug] [2021-11-22T13:44:48.116Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.4.zip 
+[info] 
+=== Remoteconfig Setup
+[debug] [2021-11-22T13:44:48.253Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.4.zip 200
+[debug] [2021-11-22T13:44:48.253Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.4.zip [stream]

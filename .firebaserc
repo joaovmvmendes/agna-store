@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "agnastore210421": {
+      "hosting": {
+        "agna-store": [
+          "agnastore210421"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "agnastore210421"
+  }
+}
