@@ -1,0 +1,33 @@
+.card-produto {
+  width: 800px;
+  margin-left: 2%;
+  margin-top: 2%;
+  height: 85px;
+}
+
+img{
+  position: absolute;
+}
+
+.txt{
+  max-width: 500px;
+  margin-left: 100px;
+  text-align: justify;
+}
+
+mat-card-actions{
+  position: absolute;
+  margin-left: 740px;
+  margin-top: 1.7%;
+}
+
+.titulo{
+  max-width: 500px;
+  text-align: center;
+  line-height: 15%;
+}
+
+.valorCampo{
+  position: absolute;
+  margin-left: 550px;
+}

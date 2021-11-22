@@ -1,0 +1,28 @@
+<div mat-dialog-content>
+  <form>
+    <mat-form-field style="width: 100%;" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="data.nomeCli" name="nomeCli">
+    </mat-form-field>
+  </form>
+  <form>
+    <mat-form-field style="width: 100%;" appearance="fill">
+      <mat-label>E-Mail</mat-label>
+      <input matInput [(ngModel)]="data.emailCli" name="emailCli">
+    </mat-form-field>
+  </form>
+  <form>
+    <mat-form-field style="width: 100%;" appearance="fill">
+      <mat-label>Telefone</mat-label>
+      <input matInput [(ngModel)]="data.numeroCli" name="numeroCli">
+    </mat-form-field>
+  </form>
+</div>
+<div style="margin-left: 42.5px;" mat-dialog-actions>
+  <button style="width: 40%;
+                 background-color: hotpink;"
+          mat-raised-button (click)="onNoClick()">CANCELAR</button>
+  <button style="width: 40%;
+                 background-color: hotpink;"
+          mat-raised-button [mat-dialog-close]="data">ENVIAR</button>
+</div>

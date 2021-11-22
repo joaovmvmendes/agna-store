@@ -1,0 +1,19 @@
+button{
+  width: 40%;
+  background-color: hotpink;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+mat-card{
+  width: 500px;
+  margin-left: 30%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+mat-card-actions{
+  margin-left: 70px;
+}

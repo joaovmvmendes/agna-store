@@ -1,0 +1,17 @@
+<mat-card class="card-produto">
+  <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+  <mat-card-actions>
+    <button mat-mini-fab (click)="openBottomSheet()">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </mat-card-actions>
+  <h2 class="titulo" >Nome do Produto</h2>
+  <mat-card-content class="txt">
+    <h2 class="valorCampo" style="margin-top: 1%;">
+      R$ {{valorProd}}
+    </h2>
+    <p>
+      {{ descProd }}
+    </p>
+  </mat-card-content>
+</mat-card>
