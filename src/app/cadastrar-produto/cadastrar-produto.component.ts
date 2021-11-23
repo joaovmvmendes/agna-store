@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { Produto } from './models/database.model';
 
 @Component({
   selector: 'app-cadastrar-produto',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastrar-produto.component.css']
 })
 export class CadastrarProdutoComponent implements OnInit {
+  // obj   : tipo    = inicializador;
+  //produto: Produto = this.global.initProduto();
 
-  constructor() { }
+  constructor(
+    // private db: DataBaseService,
+    // public global: ServicoGlobal
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  salvar () {
+    //this.db.registrarProduto(produto);
   }
 
 }

@@ -13,6 +13,11 @@ import { FeedComponent } from './feed/feed.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 
+// Firebase
+//import { AngularFirestoreModule } from '@angular/fire/firestore';
+//import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,8 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    //AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
 
   providers: [],
