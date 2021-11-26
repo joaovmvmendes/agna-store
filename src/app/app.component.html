@@ -3,8 +3,13 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span>Agna Store</span>
-  <span class="spacer"></span>
-  <button mat-icon-button [routerLink]="['./carrinho']">
+
+  <mat-form-field appearance="standard" class="procura-campo" >
+    <mat-label>Procurar produto</mat-label>
+    <input matInput placeholder="Ex. Produto">
+  </mat-form-field>
+
+  <button mat-icon-button [routerLink]="['./carrinho']" class="carrinho" >
     <mat-icon>local_grocery_store</mat-icon>
   </button>
 </mat-toolbar>
